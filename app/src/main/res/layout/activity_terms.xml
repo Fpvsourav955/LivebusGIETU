@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Terms">
+
+    <!-- 1. App Bar for Navigation -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        app:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Terms &amp; Conditions"
+            app:titleTextColor="@android:color/black" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 2. Scrollable Content Area -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Main Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/interextrabold"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Last Updated Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/interregular"
+                android:text="@string/last_updated_29_august_2025"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#1A000000" />
+
+            <!-- Section 1: Acceptance of Terms -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_1_acceptance_of_terms" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="By downloading, installing, or using the Livebus GIETU application (the 'Service'), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the Service. These terms are a legal agreement between you and Team Hydra."
+                tools:ignore="HardcodedText" />
+
+            <!-- Section 2: Use of the Service -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_2_use_of_the_service" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/livebus_gietu_provides_real_time_bus_tracking_information_for_students_of_g_i_e_t_university_the_service_is_provided_for_personal_non_commercial_use_only_you_agree_not_to_use_the_service_for_any_unlawful_purpose_or_in_a_way_that_could_harm_the_service_or_its_users" />
+
+
+            <!-- Section 3: User Accounts -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_3_user_accounts" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/to_access_the_service_you_must_register_for_an_account_using_google_sign_in_or_another_provided_method_you_are_responsible_for_maintaining_the_confidentiality_of_your_account_information_and_for_all_activities_that_occur_under_your_account_you_agree_to_notify_us_immediately_of_any_unauthorized_use" />
+
+
+            <!-- Section 4: User Conduct -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_4_user_conduct" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/you_agree_not_to_misuse_the_service_this_includes_but_is_not_limited_to_attempting_to_interfere_with_the_proper_functioning_of_the_app_reverse_engineering_the_app_or_using_the_tracking_data_for_any_purpose_other_than_personal_convenience_related_to_university_transport" />
+
+
+            <!-- Section 5: Disclaimers -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_5_disclaimers_and_limitation_of_liability" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/the_service_is_provided_as_is_without_any_warranties_while_we_strive_for_accuracy_real_time_tracking_data_may_be_subject_to_delays_or_inaccuracies_due_to_network_connectivity_or_gps_signal_issues_team_hydra_is_not_liable_for_any_damages_or_losses_resulting_from_your_use_of_the_service_including_any_inconvenience_caused_by_inaccurate_tracking_information" />
+
+            <!-- Section 6: Termination -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_6_termination" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/we_may_terminate_or_suspend_your_access_to_the_service_at_any_time_without_prior_notice_or_liability_for_any_reason_including_if_you_breach_these_terms_and_conditions_upon_termination_your_right_to_use_the_service_will_immediately_cease" />
+
+            <!-- Section 7: Contact Information -->
+            <TextView
+                style="@style/TermSectionTitle"
+                android:text="@string/_7_contact_information" />
+
+            <TextView
+                style="@style/TermSectionBody"
+                android:text="@string/for_any_questions_or_concerns_regarding_these_terms_and_conditions_please_contact_us_at_souravpati42_gmail_com" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

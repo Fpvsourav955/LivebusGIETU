@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pureblack">#000000</color>
+    <color name="grayishblack">#121212</color>
+    <color name="lightgray">#E0E0E0</color>
+    <color name="red">#FF0000</color>
+    <color name="darkgray">#505050</color>
+    <color name="normal_stroke">#E0E0E0</color> <!-- Light gray or whatever your default is -->
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/pureblack</item> <!-- Save & Cancel button text color -->
+        <item name="android:background">@color/white</item> <!-- Rounded background -->
+
+    </style>
+
+    <!-- border and text -->
+    <color name="alert_border">#F6C6C6</color>       <!-- pale red border -->
+    <color name="alert_text">#B33030</color>         <!-- darker red title -->
+    <color name="alert_subtext">#8F4444</color>      <!-- subdued red/gray for subtitle -->
+
+    <!-- circle bg/icon -->
+    <color name="alert_circle_bg">#FFF1F1</color>    <!-- very light red -->
+    <color name="alert_stroke">#F6C6C6</color>       <!-- matches border -->
+    <color name="alert_icon">#D04444</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="screen_bg">#f7f8fb</color>
+
+    <color name="text_primary">#202124</color>
+    <color name="text_secondary">#6b6f76</color>
+    <color name="green_400">#7ED957</color>
+    <color name="green_600">#2ECC71</color>
+    <color name="blue_600">#2B7FFF</color>
+    <color name="line_gray">#E6E8EB</color>
+    <color name="status_pill_bg">#E9F8EE</color>
+    <color name="green_700">#16A34A</color>
+</resources>

@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "340465684084",
+    "firebase_url": "https://livebus-gietu-default-rtdb.firebaseio.com",
+    "project_id": "livebus-gietu",
+    "storage_bucket": "livebus-gietu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340465684084:android:914b3ba662456616d48b21",
+        "android_client_info": {
+          "package_name": "com.sourav.livebusgietu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340465684084-2v4dvnptde9viv6bg1p0p6i102donlv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav.livebusgietu",
+            "certificate_hash": "046786528651999b582d448a3c6ee105dd8ae692"
+          }
+        },
+        {
+          "client_id": "340465684084-d716imijf8sem3bhkpiu1lg6ki0eslq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav.livebusgietu",
+            "certificate_hash": "6787fadaefd390fff012a7c17451fe0b6444dc8a"
+          }
+        },
+        {
+          "client_id": "340465684084-j3r5afike0emv3l9l4nef2ml18d1f30e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav.livebusgietu",
+            "certificate_hash": "03e966beca463a9b431529216fa18a6f3a1cb32a"
+          }
+        },
+        {
+          "client_id": "340465684084-m28am5hf9dc8u015s7agekr17k4qmtq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav.livebusgietu",
+            "certificate_hash": "11314b3011032dd948856c6c3f3e3b2c2065b2f6"
+          }
+        },
+        {
+          "client_id": "340465684084-1dbs9l4uiq8ahf20ttck0dc0oio8pb00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFE2SCVuEy7nU2PQ7Nu6v1U4RkqxSycxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340465684084-1dbs9l4uiq8ahf20ttck0dc0oio8pb00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bug">
+    <RelativeLayout
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/repback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manroperegular"
+        android:gravity="center"
+        android:text="@string/bug_report"
+        android:textColor="@color/pureblack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.324">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bug_background"
+            android:clipToPadding="false"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:translationZ="6dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/interregular"
+                android:text="@string/enter_name"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="name"
+                android:background="@drawable/bug_edittext_background"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/interregular"
+                android:text="@string/enter_email_address"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="name"
+                android:background="@drawable/bug_edittext_background"
+                android:hint="@string/email_address"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                tools:ignore="TextFields,VisualLintTextFieldSize" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:text="@string/describe_the_bug"
+                android:fontFamily="@font/interregular"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:autofillHints="name"
+                android:background="@drawable/bug_edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/write_text_here"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minHeight="48dp"
+                android:minLines="4"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+                <TextView
+                    android:fontFamily="@font/interregular"
+                    android:id="@+id/imageNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_screensort"
+                    android:layout_marginStart="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#333" />
+
+                <!-- ImageButton to trigger image selection -->
+                <ImageButton
+
+                    android:layout_gravity="end"
+                    android:id="@+id/imageUploadButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icons8upload100"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:contentDescription="@string/upload_image"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/manropemedium"
+                android:textColor="@color/white"
+                android:background="@drawable/submit_background"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

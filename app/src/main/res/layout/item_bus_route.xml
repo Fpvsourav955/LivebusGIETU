@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/bus_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/directionsbus"
+        android:layout_centerVertical="true"
+        android:contentDescription="Bus Icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/bus_item_track_button"
+        android:layout_toEndOf="@id/bus_icon"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/bus_item_name"
+            android:fontFamily="@font/interregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/bus_item_status"
+            android:fontFamily="@font/interregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: On Time"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bus_item_track_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Track"
+        android:textSize="12sp"
+        style="?attr/materialButtonOutlinedStyle"/>
+</RelativeLayout>
+
